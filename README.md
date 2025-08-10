@@ -1,80 +1,80 @@
-# Configurando a Rede no Archer AX6000
+Configuring the Network on the Archer AX6000
+============================================
 
-Configurar corretamente o roteador Archer AX6000 é fundamental para garantir uma internet rápida, segura e eficiente. A seguir, estão os passos que qualquer pessoa pode seguir para realizar essa configuração com segurança, mesmo sem experiência técnica.
+Properly configuring the Archer AX6000 router is essential for ensuring a fast, secure, and efficient internet connection. The following steps provide a comprehensive guide that anyone can follow to complete this setup safely, even without prior technical experience.
 
----
+Step 1 -- Accessing the Configuration Panel
+------------------------------------------
 
-## Passo 1 – Acesso ao Painel de Configuração
+First, connect your computer or mobile device to the router via an Ethernet cable or Wi-Fi. Next, open a web browser and enter the Archer AX6000's default IP address: `192.168.0.1`.
 
-A primeira ação que a pessoa realiza é conectar o computador ou celular ao roteador, usando cabo ou Wi-Fi. Em seguida, ela abre um navegador e digita o endereço IP padrão do Archer AX6000: `192.168.0.1`.
+Upon your first access, the router will prompt you to create a new administrator password. Choose a strong password, such as `Italo2025!@`, to prevent unauthorized access to the control panel.
 
-Na primeira vez que acessa, o roteador pede para criar uma nova senha de administrador. A pessoa escolhe uma senha forte, como `Italo2025!@`, para impedir acessos indesejados ao painel.
+After setting the password, the system will ask for your internet connection type. Most Brazilian providers use **Dynamic IP**, so this option should be selected.
 
-Depois de criar a senha, o sistema pergunta o tipo de conexão com a internet. A maioria das operadoras brasileiras usa **IP Dinâmico (Dynamic IP)**, então essa opção é mantida.
+Step 2 -- Wireless Network Configuration
+---------------------------------------
 
----
+Once in the control panel, navigate to `Wireless > Wireless Settings`. Disable the **Smart Connect** feature, which combines the 2.4GHz and 5GHz networks into a single one, to configure each band separately.
 
-## Passo 2 – Configuração da Rede Wireless
+In the **SSID** (network name) field, define simple and easily identifiable names:
 
-Com o painel aberto, a pessoa acessa o menu `Wireless > Wireless Settings`. A função **Smart Connect** (que une as redes 2.4GHz e 5GHz em uma só) é desativada para que cada banda seja configurada separadamente.
+-   For 2.4GHz: `Italo_Home_2G`
 
-No campo **SSID** (nome da rede), ela define nomes simples e fáceis de identificar:
+-   For 5GHz: `Italo_Home_5G`
 
-- Para 2.4GHz: `Casa_Italo_2G`
-- Para 5GHz: `Casa_Italo_5G`
+In the **Password** field, set a secure password for both networks, for example: `StrongPassword2025#`.
 
-No campo **Password**, ela define uma senha segura para ambas as redes, por exemplo: `SenhaForte2025#`.
+For the **Security** option, select `WPA2-PSK` with `AES` encryption, which is currently the most secure combination available.
 
-Na opção de **segurança (Security)**, seleciona `WPA2-PSK` e criptografia `AES`, a combinação mais segura disponível atualmente.
+Step 3 -- Advanced Wireless Adjustments
+--------------------------------------
 
----
+Proceed to `Advanced > Wireless > Wireless Advanced` to optimize the signal:
 
-## Passo 3 – Ajustes Avançados de Wireless
+-   **Mode**:
 
-A pessoa segue até `Advanced > Wireless > Wireless Advanced` para otimizar o sinal:
+    -   2.4GHz: `802.11ax/n/b/g mixed`
 
-- **Modo da rede (Mode)**:
-  - 2.4GHz: `802.11ax/n/b/g mixed`
-  - 5GHz: `802.11ax/ac/n mixed`
+    -   5GHz: `802.11ax/ac/n mixed`
 
-- **Canal (Channel)**:
-  - 2.4GHz: seleciona manualmente o canal **3**, para evitar interferência de vizinhos.
-  - 5GHz: deixa em **Auto (com DFS ativado)**, permitindo que o roteador escolha os melhores canais automaticamente.
+-   **Channel**:
 
-- **Largura de canal (Channel Width)**:
-  - 2.4GHz: ajusta para **40 MHz**
-  - 5GHz: ajusta para **80 MHz**
+    -   2.4GHz: Manually select channel **3** to avoid interference from neighboring networks.
 
-- **Potência de transmissão (Transmit Power)**: define como **High**, para garantir o alcance máximo da rede.
+    -   5GHz: Leave on **Auto (with DFS enabled)**, allowing the router to automatically select the best channels.
 
-> Para exemplificar: canais como 1, 6 e 11 são frequentemente usados, por isso o canal 3 pode reduzir interferências em apartamentos. Já os 80 MHz no 5GHz são ideais para streaming e jogos online, pois permitem maior transferência de dados simultaneamente.
+-   **Channel Width**:
 
----
+    -   2.4GHz: Adjust to **40 MHz**
 
-## Passo 4 – Proteção Contra Acessos Não Autorizados
+    -   5GHz: Adjust to **80 MHz**
 
-A pessoa acessa `Advanced > System Tools > Administration` para garantir a segurança do painel. Ali, ela verifica se a senha de administrador está atualizada e difícil de ser adivinhada.
+-   **Transmit Power**: Set to **High** to ensure maximum network range.
 
-Em seguida, vai em `Advanced > Wireless > WPS` e **desativa o WPS**, um recurso que facilita conexões mas representa risco de invasão.
+> **For example:** Channels 1, 6, and 11 are commonly used, so selecting channel 3 can reduce interference in apartment buildings. An 80 MHz channel width on the 5GHz band is ideal for streaming and online gaming, as it allows for greater simultaneous data transfer.
 
-Depois, acessa `Security > Remote Management` e garante que a opção **Disable** esteja marcada. Isso bloqueia tentativas de configuração remota não autorizada.
+Step 4 -- Securing Against Unauthorized Access
+---------------------------------------------
 
----
+Navigate to `Advanced > System Tools > Administration` to secure the control panel. Here, verify that the administrator password is up to date and difficult to guess.
 
-## Passo 5 – Atualização e Backup
+Next, go to `Advanced > Wireless > WPS` and **disable WPS**. While this feature simplifies connections, it also poses a security risk.
 
-No menu `System Tools > Firmware Upgrade`, a pessoa clica em **Check for Upgrade Online**. Se houver uma versão mais nova do firmware, a atualização é realizada. Isso garante mais segurança e estabilidade.
+Then, access `Security > Remote Management` and ensure the **Disable** option is checked. This blocks unauthorized remote configuration attempts.
 
-Em `System Tools > Backup & Restore`, ela clica em **Backup** e salva o arquivo de configuração. Esse arquivo pode ser restaurado caso o roteador seja resetado no futuro.
+Step 5 -- Firmware Update and Backup
+-----------------------------------
 
----
+In the `System Tools > Firmware Upgrade` menu, click **Check for Upgrade Online**. If a newer firmware version is available, perform the update. This ensures enhanced security and stability.
 
-## Passo 6 – Qualidade de Conexão e Prioridade
+In `System Tools > Backup & Restore`, click **Backup** and save the configuration file. This file can be used to restore your settings if the router is ever reset in the future.
 
-Por fim, a pessoa acessa `Advanced > QoS (Qualidade de Serviço)`. Ela ativa o modo **By Device** e seleciona quais dispositivos devem ter prioridade — como o notebook usado para estudos e o console de videogame. Assim, mesmo com outras pessoas assistindo vídeos, esses aparelhos terão a melhor conexão.
+Step 6 -- Quality of Service (QoS) and Prioritization
+----------------------------------------------------
 
-Também ativa a função **Airtime Fairness**, que impede que aparelhos lentos prejudiquem o desempenho dos outros dispositivos.
+Finally, navigate to `Advanced > QoS (Quality of Service)`. Enable the **By Device** mode and select which devices should have priority---such as a laptop used for work or a gaming console. This ensures these devices maintain the best connection, even when other users are streaming videos.
 
----
+Also, enable the **Airtime Fairness** feature, which prevents slower devices from degrading the performance of others on the network.
 
-> Com essas etapas, a rede foi configurada com segurança, eficiência e estabilidade. Os canais e larguras foram ajustados para reduzir interferências, e a proteção contra acessos indevidos foi reforçada.
+> By following these steps, your network will be configured for security, efficiency, and stability. The channels and channel widths have been adjusted to minimize interference, and protection against unauthorized access has been reinforced.
